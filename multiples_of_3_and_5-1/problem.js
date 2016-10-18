@@ -1,17 +1,18 @@
 const threeFiveMultiplesOf = (number) => {
-  let i = 1
+  let i = 0
   let total = 0
-  while(i <= number){
+  while(i < number){
     if(i % 3 === 0) {
       total += i;
-      i+= 1;
+      i++;
       continue
     }
     if(i % 5 === 0) {
       total += i;
-      i+= 1;
+      i++;
       continue
     }
+    i++
   }
   return total
 }
